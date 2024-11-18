@@ -31,7 +31,7 @@ export const Cabecera = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/sede">
+                <NavLink className="nav-link" to="*">
                   Sedes
                 </NavLink>
               </li>
