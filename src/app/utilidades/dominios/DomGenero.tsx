@@ -6,4 +6,5 @@ export const ARREGLO_PELICULA_GENERO: Array<PeliculaGenero> = [
   { codGenero: "3", nombreGenero: "Infantiles" },
   { codGenero: "4", nombreGenero: "Ficción" },
   { codGenero: "5", nombreGenero: "Terror" },
+  { codGenero: "6", nombreGenero: "Aventura" },
 ];
