@@ -13,7 +13,7 @@ export const PeliListar = () => {
       }
     }
   };
-  
+
   return (
     <>
       <div className="pt-4  d-flex justify-content-center">
@@ -31,11 +31,14 @@ export const PeliListar = () => {
             <tbody>
               {arrPeliculas.map((miPeli: Pelicula) => (
                 <tr>
-                  <th>{miPeli.codPelicula}</th>
+                  <th>{miPeli.codPelicula}</th> 
                   <td>{miPeli.nombrePelicula}</td>
                   <td>{obtenerNombre(miPeli.codGeneroPelicula)}</td>
                   <td>{miPeli.protagonistaPelicula}</td>
                   <td>{miPeli.imagenPelicula}</td>
+                  <img src={miPeli.imagenPeliculaBase64} alt="No hay imagen" className="imagenListado" />
+                  <br />
+                  {miPeli.imagenPelicula}
                 </tr>
               ))}
             </tbody>
